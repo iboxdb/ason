@@ -21,7 +21,21 @@ public class AsonExample {
 
 **Output**
 
-```
+```java
 class java.util.HashMap
 {Value=100, Name=Andy}
 ```
+
+##### Hiberarchy
+
+```java
+var obj = ason("Name:", "Andy", "Value:", ason( "SubName:", "SubAndy" ) );
+```
+
+**Output**
+
+```java
+{Value={SubName=SubAndy}, Name=Andy}
+```
+
+
