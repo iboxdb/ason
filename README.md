@@ -38,4 +38,27 @@ var obj = ason("Name:", "Andy", "Value:", ason( "SubName:", "SubAndy" ) );
 {Value={SubName=SubAndy}, Name=Andy}
 ```
 
+##### Use class Ason can call a function
 
+```java
+import iBoxDB.LocalServer.Ason;
+import static iBoxDB.LocalServer.Ason.*;
+import static iBoxDB.LocalServer.IFunction.*;
+
+public class AsonExample {
+
+    public static void main(String[] args) {
+        var obj = new Ason("Name:", "Andy", "Add:", func((__, inputs) -> {
+            return (Integer) inputs[0] + (Integer) inputs[1];
+        }));
+ 
+        System.out.println(obj.invoke("Add", 100, 200));
+    }
+}
+```
+
+##### example
+
+```
+
+```
