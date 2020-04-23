@@ -57,8 +57,11 @@ public class AsonExample {
 }
 ```
 
-##### example
+if the first element not ends with ':' , it will back to Array , as "new Object[]"
 
 ```
+var obj = new Ason("Name:", "Andy", "Addresses:", ason("Addr_01", "Addr_02"));
 
+Object[] os = (Object[]) obj.get("Addresses");
+System.out.println(os[0] + " , " + os[1]);
 ```
