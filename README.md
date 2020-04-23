@@ -1,6 +1,6 @@
 # Ason
 
-Ason is a dynamic object notation by using Array. the definition is sample, if the first element of the Array ends with ':', this Array is a representation of Key-Value pairs.
+Ason is a dynamic object notation by using Array. the definition is simple, if the first element of the Array ends with ':', this Array is a representation of Key-Value pairs.
 
 #### Getting Started
 
