@@ -56,6 +56,10 @@ public class AsonExample {
     }
 }
 ```
+the Array pass through "new Ason(array)" always dynamic object array, it doesn't check the ':' flag.
+
+
+
 
 if the first element not ends with ':' , it will back to Array , as "new Object[]"
 
@@ -64,4 +68,10 @@ var obj = new Ason("Name:", "Andy", "Addresses:", ason("Addr_01", "Addr_02"));
 
 Object[] os = (Object[]) obj.get("Addresses");
 System.out.println(os[0] + " , " + os[1]);
+```
+
+if an Array ends with ':', but it isn't dynamic object, just new an Array, 
+
+```java
+var obj = new Object[]{ "ABC:", "DEF:"};
 ```
