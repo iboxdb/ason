@@ -56,7 +56,7 @@ public class AsonExample {
     }
 }
 ```
-the Array pass through "new Ason(array)" always dynamic object array, it doesn't check the ':' flag.
+the Array passed through "new Ason(array)" always dynamic object array, it doesn't check the ':' flag.
 
 
 
