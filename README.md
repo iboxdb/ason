@@ -5,7 +5,7 @@ Ason is a dynamic object notation by using Array. the definition is simple, if t
 #### Getting Started
 
 ```java
-import static iBoxDB.LocalServer.Ason.*;
+import static iboxdb.localserver.Ason.*;
 
 public class AsonExample {
      
@@ -41,14 +41,14 @@ var obj = ason("Name:", "Andy", "Value:", ason( "SubName:", "SubAndy" ) );
 ##### Use class Ason can call a function
 
 ```java
-import iBoxDB.LocalServer.Ason;
-import static iBoxDB.LocalServer.Ason.*;
-import static iBoxDB.LocalServer.IFunction.*;
+import iboxdb.localserver.*;
+import static iboxdb.localserver.Ason.*;
+import static iboxdb.localserver.IFunction.*;
 
 public class AsonExample {
 
     public static void main(String[] args) {
-        var obj = new Ason("Name:", "Andy", "Add:", func((__, inputs) -> {
+        var obj = new Ason("Name:", "Andy", "Add:", func((inputs) -> {
             return (Integer) inputs[0] + (Integer) inputs[1];
         }));
  
